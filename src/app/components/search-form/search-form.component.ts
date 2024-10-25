@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-search-input',
+  selector: 'app-search-form',
   standalone: true,
-  imports: [],
-  templateUrl: './search-input.component.html',
-  styleUrl: './search-input.component.css'
+  imports: [FormsModule],
+  templateUrl: './search-form.component.html',
+  styleUrl: './search-form.component.css'
 })
-export class SearchInputComponent {
+export class SearchFormComponent {
+  searchTerm: string = "";
 
+  onSearch() {
+    console.log(this.searchTerm);
+    }
+}
