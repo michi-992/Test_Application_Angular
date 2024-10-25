@@ -8,5 +8,10 @@ import { User } from '../../models/user/user.model'
   providedIn: 'root'
 })
 export class UserService {
-  constructor() { }
+  private apiUrl = 'http://localhost:8080/api/testdb';
+  constructor(private http: HttpClient) { }
+
+  getUser() {
+    return this.http.get<User>(this.apiUrl);
+  }
 }
