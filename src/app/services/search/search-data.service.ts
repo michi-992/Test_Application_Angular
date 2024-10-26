@@ -8,5 +8,10 @@ import { SearchItem } from '../../models/search-item/search-item.model'
   providedIn: 'root'
 })
 export class SearchDataService {
-  constructor() { }
+  private apiUrl = 'http://localhost:8080/searchItems';
+  constructor(private http: HttpClient) { }
+
+  getSearchItems() {
+    return this.http.get<SearchItem[]>(this.apiUrl);
+  }
 }
