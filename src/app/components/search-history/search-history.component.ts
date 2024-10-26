@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 @Component({
   selector: 'app-search-history',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './search-history.component.html',
   styleUrl: './search-history.component.css'
 })

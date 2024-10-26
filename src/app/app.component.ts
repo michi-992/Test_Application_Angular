@@ -3,12 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { InfoBoxComponent } from './components/info-box/info-box.component';
 import { UserComponent } from './components/user/user.component';
 import { SearchFormComponent } from './components/search-form/search-form.component';
+import { SearchHistoryComponent } from './components/search-history/search-history.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NgbModule, InfoBoxComponent, UserComponent, SearchFormComponent],
+  imports: [RouterOutlet, NgbModule, InfoBoxComponent, UserComponent, SearchFormComponent, SearchHistoryComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
