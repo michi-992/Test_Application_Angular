@@ -1,4 +1,4 @@
-export class SearchItem {
-  id: number,
-  search: string;
+export interface SearchItem {
+  id: number;
+  searchTerm: string;
 }
