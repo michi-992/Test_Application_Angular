@@ -1,4 +1,4 @@
 export interface SearchItem {
-  id: number;
+  id?: number;
   searchTerm: string;
 }
